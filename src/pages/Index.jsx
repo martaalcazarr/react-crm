@@ -1,50 +1,53 @@
 import {useLoaderData} from 'react-router-dom'
+import Client from '../components/Client';
 
 export function loader(){
-  const clientes = [
+  const clients = [
     {
       id: 6,
-      nombre: 'María',
-      telefono: 912345678,
+      name: 'Maria',
+      phone: 912345678,
       email: "maria@gmail.com",
-      empresa: 'Empresa ABC'
-      },
-      {
+      company: 'ABC Company'
+    },
+    {
       id: 7,
-      nombre: 'Andrés',
-      telefono: 934567890,
+      name: 'Andres',
+      phone: 934567890,
       email: "andres@hotmail.com",
-      empresa: 'Empresa XYZ'
-      },
-      {
+      company: 'XYZ Company'
+    },
+    {
       id: 8,
-      nombre: 'Carolina',
-      telefono: 956789012,
+      name: 'Carolina',
+      phone: 956789012,
       email: "carolina@outlook.com",
-      empresa: 'Empresa 123'
-      },
-      {
+      company: '123 Company'
+    },
+    {
       id: 9,
-      nombre: 'Diego',
-      telefono: 978901234,
+      name: 'Diego',
+      phone: 978901234,
       email: "diego@gmail.com",
-      empresa: 'Empresa XYZ'
-      },
-      {
+      company: 'XYZ Company'
+    },
+    {
       id: 10,
-      nombre: 'Sofía',
-      telefono: 991234567,
+      name: 'Sofia',
+      phone: 991234567,
       email: "sofia@yahoo.com",
-      empresa: 'Empresa ABC'
-      }
-];
-  return clientes
-}
+      company: 'ABC Company'
+    }
+  ];
+  
+  return clients;
+  }
+
 
 const Index = () => {
 
-  const clientes = useLoaderData()
-  console.log(clientes)
+  const clients = useLoaderData()
+  console.log(clients)
 
   return (
     <>
@@ -52,6 +55,34 @@ const Index = () => {
     Clients
     </h1>
     <p className="mt-3">Manage your clients</p>
+
+    {clients.length ? (
+      <table className='w-full bg-white shadow mt-5 table-auto'>
+        <thead className='bg-blue-800 text-white'>
+      <tr>
+        <th className='p-2'>
+        Client
+        </th>
+        <th className='p-2'>
+        Information
+        </th>
+        <th className='p-2'>
+        Actions
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+        {clients.map(client => (
+         <Client
+         client={client}
+         key={client.id}/>
+        ))}
+      </tbody>
+      
+      </table>
+    ) : (
+      <p className="mt-3">No avaliable clients</p>
+    )}
     </>
   )
 }
