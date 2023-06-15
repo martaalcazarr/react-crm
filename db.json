@@ -1,0 +1,74 @@
+{
+        "clients": [
+            {
+                "id": 1,
+                "name": "Elena",
+                "phone": 912345678,
+                "email": "elena@gmail.com",
+                "company": "XYZ Corporation"
+            },
+            {
+                "id": 2,
+                "name": "Juan",
+                "phone": 934567890,
+                "email": "juan@hotmail.com",
+                "company": "ABC Corporation"
+            },
+            {
+                "id": 3,
+                "name": "Pedro",
+                "phone": 956789012,
+                "email": "pedro@outlook.com",
+                "company": "123 Industries"
+            },
+            {
+                "id": 4,
+                "name": "Laura",
+                "phone": 978901234,
+                "email": "laura@gmail.com",
+                "company": "XYZ Corporation"
+            },
+            {
+                "id": 5,
+                "name": "Ana",
+                "phone": 991234567,
+                "email": "ana@yahoo.com",
+                "company": "ABC Corporation"
+            },                                  
+            {
+                "id": 6,
+                "name": "Maria",
+                "phone": 912345678,
+                "email": "maria@gmail.com",
+                "company": "ABC Company"
+            },
+            {
+                "id": 7,
+                "name": "Andres",
+                "phone": 934567890,
+                "email": "andres@hotmail.com",
+                "company": "XYZ Company"
+            },
+            {
+                "id": 8,
+                "name": "Carolina",
+                "phone": 956789012,
+                "email": "carolina@outlook.com",
+                "company": "123 Company"
+            },
+            {
+                "id": 9,
+                "name": "Diego",
+                "phone": 978901234,
+                "email": "diego@gmail.com",
+                "company": "XYZ Company"
+            },
+            {
+                "id": 10,
+                "name": "Sofia",
+                "phone": 991234567,
+                "email": "sofia@yahoo.com",
+                "company": "ABC Company"
+            }
+        ]
+    }
